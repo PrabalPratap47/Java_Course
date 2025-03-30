@@ -1,6 +1,6 @@
 public class Bit {
     
-//----------------->Odd even
+//----------------->Odd even using Bit manipulation
 
 
 // Scanner sc = new Scanner(System.in);
