@@ -91,25 +91,25 @@ public class Function_Methds {
     
 // //-----------------binormial function 
         
-//     public static int Pfactorial(int n){
+    public static int Pfactorial(int n){
     
-//         int factorial = 1;  
-//         for(int i = 1;i<=n; i++){ 
-//           factorial = factorial * i;
-//         }
-//         return factorial;
-//     }
-//     public static int binomial_fun(int n,int r){
-//         int n_fac = Pfactorial(n);
-//         int r_fac = Pfactorial(r);
-//         int nmr_fac = Pfactorial(n-r);
+        int factorial = 1;  
+        for(int i = 1;i<=n; i++){ 
+          factorial = factorial * i;
+        }
+        return factorial;
+    }
+    public static int binomial_fun(int n,int r){
+        int n_fac = Pfactorial(n);
+        int r_fac = Pfactorial(r);
+        int nmr_fac = Pfactorial(n-r);
 
-//         int binomialf = n_fac/(r_fac*nmr_fac);
-//         return binomialf;
-//     }
-//         public static void main(String[]args){
-//         System.out.println(binomial_fun(5, 2));
-//         }
+        int binomialf = n_fac/(r_fac*nmr_fac);
+        return binomialf;
+    }
+        public static void main(String[]args){
+        System.out.println(binomial_fun(5, 2));
+        }
 
 
 
@@ -128,12 +128,11 @@ public class Function_Methds {
 //         return isPrime;  //return true;
 //     }
  
-//     // public static void main(String[] args) {
+//     public static void main(String[] args) {
         
-//     //     System.out.println(isPrime(20));
-//     // }
-
-
+//         System.out.println(isPrime(20));
+//     }
+// }
 
 
 
@@ -157,7 +156,7 @@ public class Function_Methds {
 //     public static void main(String [] args) {
 //         Primesinrange(20);
 //     }
-
+// }
 
 
 
@@ -185,6 +184,7 @@ public class Function_Methds {
 // }
 // public static void main(String[] args) {
 //     binTodec(11);
+// }
 // }
 
 
@@ -217,6 +217,7 @@ public class Function_Methds {
 // public static void main(String[] args) {
 //     decTobin(11);
 // }
+// }
 
 
 
@@ -227,7 +228,7 @@ public class Function_Methds {
 
 
 
-}
+
 
  
 

@@ -3,7 +3,7 @@ public class Two_d_array{
 
 
 
-    //How to find a element in 2-D array
+    //______________________How to find a element in 2-D array
 
 //     public static boolean search(int matrix[][],int key){
 //         int n=matrix.length,m = matrix[0].length; 
@@ -20,12 +20,13 @@ public class Two_d_array{
 //     }
 
 
-//     // How to create a 2-D array
+//___________________________How to create a 2-D array
+
 //     public static void main(String[]args){
 //         int matrix [][]=new int[3][3];
-//         int n=matrix.length,m = matrix[0].length; 
+//         int n=matrix.length,m = matrix.length; 
 
-//         //input
+//         //__input
 //         Scanner sc = new Scanner(System.in);
 //          for(int i=0;i<n;i++){
 //             for(int j=0;j<m;j++){
@@ -33,7 +34,7 @@ public class Two_d_array{
 //             }
 //     }
 
-//     //output
+//     //__output
 //     for(int i=0;i<n;i++){
 //         for(int j=0;j<m;j++){
 //             System.out.print(matrix[i][j]+" ");
@@ -41,7 +42,7 @@ public class Two_d_array{
 //         System.out.println();
 // }
 
-//         search(matrix,0 );  // calling search function
+//         //search(matrix,0 );  // calling search function
 // }
 // }
 
@@ -49,7 +50,7 @@ public class Two_d_array{
 
 
 
-//Sprial Matrix ---ImpQues------------------------------------------
+//____________________________________Sprial Matrix ---ImpQues------------------------------------------
    
 // public static void spiral(int matrix[][]){
 //     int startrow = 0;
@@ -106,7 +107,7 @@ public class Two_d_array{
 
 
 
-//Diagonal matrix --ImpQues-----------------------------------
+//__________________________________Diagonal matrix --ImpQues-----------------------------------
 
 // public static int Diagonal(int matrix[][]){
 
@@ -147,7 +148,8 @@ public class Two_d_array{
 
 
 
-// // Searching in sorted matrix
+//______________________________ Searching in sorted matrix
+
 // public static boolean sorted(int matrix [][],int key){
 
 //     int row=0,col=matrix[0].length-1;
@@ -214,30 +216,30 @@ public class Two_d_array{
 
 
 //Q-3
-public static void main(String[] args) {
-        int array [][]={{1,2,3},{4,5,6}};
-        int row =2,col=3;
+// public static void main(String[] args) {
+//         int array [][]={{1,2,3},{4,5,6}};
+//         int row =2,col=3;
 
-        for(int i = 0;i<array.length;i++){       
-            for(int j=0;j<array[0].length;j++){
-                System.out.print(array[i][j]+"  ");
-            }
-            System.out.println(" ");
-        }
+//         for(int i = 0;i<array.length;i++){       
+//             for(int j=0;j<array[0].length;j++){
+//                 System.out.print(array[i][j]+"  ");
+//             }
+//             System.out.println(" ");
+//         }
  
-        int transpose [][] = new int [col][row];  // we did transpose here.
-        for(int i = 0;i<row;i++){       
-            for(int j=0;j<col;j++){
-                transpose[j][i]=array[i][j];
-            }
-        }
-        System.out.println("  ");
+//         int transpose [][] = new int [col][row];  // we did transpose here.
+//         for(int i = 0;i<row;i++){       
+//             for(int j=0;j<col;j++){
+//                 transpose[j][i]=array[i][j];
+//             }
+//         }
+//         System.out.println("  ");
 
-        for(int i = 0;i<transpose.length;i++){       
-            for(int j=0;j<transpose[0].length;j++){
-                System.out.print(transpose[i][j]+"  ");
-            }
-            System.out.println(" ");
-        }
-    }
-}
+//         for(int i = 0;i<transpose.length;i++){       
+//             for(int j=0;j<transpose[0].length;j++){
+//                 System.out.print(transpose[i][j]+"  ");
+//             }
+//             System.out.println(" ");
+//         }
+//     }
+// }

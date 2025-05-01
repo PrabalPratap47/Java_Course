@@ -59,16 +59,17 @@ public class Strings {
     //------------------------------->String CharAt method to print all elements
 
 
-    // public static void Char(String fullname){        //char function
-    //     for(int i =0;i<fullname.length();i++){
-    //         System.out.print(fullname.charAt(i)+" ");
-    //     }
-    //     System.out.println();
-    // }
-    // public static void main(String[] args) {
-    //     String fullname = "Prabal Pratap Singh";
-    //     Char(fullname);
-    // }
+//     public static void Char(String fullname){        //char function
+//         for(int i =0;i<fullname.length();i++){
+//             System.out.print(fullname.charAt(i)+" ");
+//         }
+//         System.out.println();
+//     }
+//     public static void main(String[] args) {
+//         String fullname = "Prabal Pratap Singh";
+//         Char(fullname);
+//     }
+// }
 
 
 
@@ -265,6 +266,7 @@ public class Strings {
 //             i++;
 //         }
 //         str2 += str.charAt(i); // this will add letters always
+
 //         if(count >1){
 //             str2 = str2 + count.toString(); //this will add number else it will dont do anything
 //         }
@@ -313,35 +315,35 @@ public class Strings {
 //-------------------->Anagrams Check
 
 
-    public static void main(String[] args) {
-        String str1 = "earth";
-        String str2 = "heart";
+//     public static void main(String[] args) {
+//         String str1 = "earth";
+//         String str2 = "heart";
 
-        // Convert Strings to lowercase, so that we don't have to check for uppercase separately
-        str1 = str1.toLowerCase();
-        str2 = str2.toLowerCase();
+//         // Convert Strings to lowercase, so that we don't have to check for uppercase separately
+//         str1 = str1.toLowerCase();
+//         str2 = str2.toLowerCase();
 
-        // First check if the lengths are the same
-        if (str1.length() == str2.length()) {
+//         // First check if the lengths are the same
+//         if (str1.length() == str2.length()) {
 
-        // Convert strings into char arrays
-            char[] str1charArray = str1.toCharArray();
-            char[] str2charArray = str2.toCharArray();
+//         // Convert strings into char arrays
+//             char[] str1charArray = str1.toCharArray();
+//             char[] str2charArray = str2.toCharArray();
 
-        // Sort the char arrays
-            Arrays.sort(str1charArray);
-            Arrays.sort(str2charArray);
+//         // Sort the char arrays
+//             Arrays.sort(str1charArray);
+//             Arrays.sort(str2charArray);
 
-        // If the sorted char arrays are identical, the strings are anagrams
-            if (Arrays.equals(str1charArray, str2charArray)) {
-                System.out.println(str1 + " and " + str2 + " are anagrams of each other.");
-            } else {
-                System.out.println(str1 + " and " + str2 + " are not anagrams of each other.");
-            }
+//         // If the sorted char arrays are identical, the strings are anagrams
+//             if (Arrays.equals(str1charArray, str2charArray)) {
+//                 System.out.println(str1 + " and " + str2 + " are anagrams of each other.");
+//             } else {
+//                 System.out.println(str1 + " and " + str2 + " are not anagrams of each other.");
+//             }
             
-        } else {
-            // Case when lengths are not equal
-            System.out.println(str1 + " and " + str2 + " are not anagrams of each other.");
-        }
-    }
-}
+//         } else {
+//             // Case when lengths are not equal
+//             System.out.println(str1 + " and " + str2 + " are not anagrams of each other.");
+//         }
+//     }
+// }

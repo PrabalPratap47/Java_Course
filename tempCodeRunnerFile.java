@@ -1,23 +1,24 @@
 
-public static void insertion(int arr[]){
-    int n = arr.length ;
-    for(int i =0; i<n; i++){
+    public static void main(String[]args){
+        int matrix [][]=new int[3][3];
+        int n=matrix.length,m = matrix[0].length; 
 
-        int curr = arr[i];
-        int prev = i-1;
+        //__input
+        Scanner sc = new Scanner(System.in);
+         for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                matrix[i][j] = sc.nextInt();
+            }
+    }
 
-        //finding out the corrct position to insert , pushing back
-        while(prev>=0 && arr[prev] > arr[curr]){
-            arr[prev+1]=arr[prev];    //shifting of small element
-            prev--;                          
+    //__output
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            System.out.print(matrix[i][j]+" ");
         }
+        System.out.println();
+}
 
-        //insertion
-        arr[prev+1] = arr[curr];
-    }
-
-    //print output
-    for(int k=0;k<n;k++){
-        System.out.print(arr[k]+" ");
-    }
+        search(matrix,0 );  // calling search function
+}
 }

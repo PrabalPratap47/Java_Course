@@ -1,21 +1,27 @@
+import java.util.Scanner;
 public class Bit {
     
-//----------------->Odd even using Bit manipulation
+//----------------->Odd even using division
 
-
-// Scanner sc = new Scanner(System.in);
-// int a = sc.nextInt();
-// if(a%2==0){
-//         System.out.println("even");
-//         }
-// else{
-//         System.out.println("odd");
+// public static void main(String[] args) {
+    
+//     System.out.println("Enter a number to check odd or even");
+//     Scanner sc = new Scanner(System.in);
+//     int a = sc.nextInt();
+//     if(a%2==0){
+//             System.out.println("even");
+//             }
+//     else{
+//             System.out.println("odd");
+//     }
+// }
 // }
 
 
 
-//odd even BIt manupulaton
+//___________________odd even BIt manupulaton
 
+// public static void main(String[] args) {
 // int n = 1687;
 // if((n & 1)==0){ 
 //         System.out.println("even");
@@ -25,11 +31,15 @@ public class Bit {
 
 //     }
 // }
+// }
 
 
 
 
-//To find a number is power of two or not
+
+
+
+//_____________To find a number is power of two or not
 
 //  public static boolean powerOfTwo(int n){
 //     return (n & (n-1))==0;
@@ -41,11 +51,16 @@ public class Bit {
 
 
 
+
+
+
+
+
 //--------->Get ith bit (to get whats on the ith bit by producting by 1 on ith bit)
 
 // public static void main(String[] args) {
-//     int n =9;
-//     int i = 0;
+//     int n =15;
+//     int i = 2;
 //     //int bitmask = 1<<i;
 //     if((n & 1<<i) == 0){
 //         System.out.println("Ith bit is 0");
@@ -53,8 +68,8 @@ public class Bit {
 // else{
 //     System.out.println("ith bit is 1");
 // }
-
-
+// }
+// }
 
 
 
@@ -111,7 +126,6 @@ public class Bit {
 //     System.out.println(clear(10, 1));   
 // }
 // }
-
 
 
 
