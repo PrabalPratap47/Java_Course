@@ -71,7 +71,7 @@ public class Function_Methds {
     //     }
     //     int factorial = 1;  // we give factorial = 1 so if multiplied with any number it changes to that number
     //     //loop
-    //     for(int i = n;i>=1; i--){  //i n se le kr 1 tk jaye means decending order but if we use__for(int i=1;i<=n; i++)__i 1 se le kr n tk jaye means acending order
+    //     for(int i = 1;i<=n; i++){  //i n se le kr 1 tk jaye means decending order but if we use__for(int i=1;i<=n; i++)__i 1 se le kr n tk jaye means acending order
     //       factorial = factorial * i;
     //     }
 
@@ -84,6 +84,7 @@ public class Function_Methds {
     //     int n = sc.nextInt();   
     //         Pfactorial(n);
     //     }
+    // }
     
 
 
@@ -91,26 +92,26 @@ public class Function_Methds {
     
 // //-----------------binormial function 
         
-    public static int Pfactorial(int n){
+    // public static int Pfactorial(int n){
     
-        int factorial = 1;  
-        for(int i = 1;i<=n; i++){ 
-          factorial = factorial * i;
-        }
-        return factorial;
-    }
-    public static int binomial_fun(int n,int r){
-        int n_fac = Pfactorial(n);
-        int r_fac = Pfactorial(r);
-        int nmr_fac = Pfactorial(n-r);
+    //     int factorial = 1;  
+    //     for(int i = 1;i<=n; i++){ 
+    //       factorial = factorial * i;
+    //     }
+    //     return factorial;
+    // }
+    // public static int binomial_fun(int n,int r){
+    //     int n_fac = Pfactorial(n);
+    //     int r_fac = Pfactorial(r);
+    //     int nmr_fac = Pfactorial(n-r);
 
-        int binomialf = n_fac/(r_fac*nmr_fac);
-        return binomialf;
-    }
-        public static void main(String[]args){
-        System.out.println(binomial_fun(5, 2));
-        }
-
+    //     int binomial = n_fac/(r_fac*nmr_fac);
+    //     return binomial;
+    // }
+    //     public static void main(String[]args){
+    //     System.out.println(binomial_fun(5, 2));
+    //     }
+    // }
 
 
 
