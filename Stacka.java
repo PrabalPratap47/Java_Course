@@ -5,6 +5,9 @@ import javax.print.DocFlavor.STRING;
 
 public class Stacka {
 
+
+    
+
     // _____________Implementing stack using ArrayList___________________________
 
     // static class Stack {
@@ -55,8 +58,15 @@ public class Stacka {
 
     // }
 
-    // _______________Implementing Stack using Linked
-    // List______________________________
+
+
+
+
+
+
+
+
+    // _______________Implementing Stack using LinkedList______________________________
 
     // static class Node {
     // int data;

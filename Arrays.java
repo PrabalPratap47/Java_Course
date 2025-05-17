@@ -92,33 +92,32 @@ public class Arrays {
 //-------------Take an array as input and seach for given number x and print index at which it occurs.
 
 
-    // public static void main(String args[]){
+//     public static void main(String args[]){
 
-    // //Input Size
-    //     System.out.println("enter your array size");
-    //     Scanner sc = new Scanner(System.in);
-    //     int size = sc.nextInt();
-    //     int numbers[]= new int[size];
+//     //Input Size
+//         System.out.println("enter your array size");
+//         Scanner sc = new Scanner(System.in);
+//         int size = sc.nextInt();
+//         int numbers[]= new int[size];
 
-    // //Input
-    //     System.out.println("enter your array");
-    //     for(int i = 0;i<size;i++){
-    //          numbers[i]=sc.nextInt();  //i is index here and numbers are getting entered to respective indexes.
-    //     }
-    //  // get your x   
-    //     System.out.println("enter your x");
-    //     int x = sc.nextInt();
+//     //Input
+//         System.out.println("enter your array");
+//         for(int i = 0;i<size;i++){
+//              numbers[i]=sc.nextInt();  //i is index here and numbers are getting entered to respective indexes.
+//         }
+//      // get your x   
+//         System.out.println("enter your x");
+//         int x = sc.nextInt();
     
-    // //Output
-    //     for(int i =0;i<numbers.length;i++){
-    //         if(numbers[i] == x){
-    //             System.out.println("x is found at index " + i);
-    //         }
-    //     } 
-    //   }
+//     //Output
+//         for(int i =0;i<numbers.length;i++){
+//             if(numbers[i] == x){
+//                 System.out.println("x is found at index " + i);
+//             }
+//         } 
+//       }
 
-    // }
-
+// }
 
 
 
@@ -147,10 +146,12 @@ public class Arrays {
 
 // public static void main(String[] args) {
 //     Scanner sc = new Scanner(System.in);
+//     System.out.println("Enter your array size");
 //     int size = sc.nextInt();
 //     int marks[] = new int[size];
-
+    
 //     //input array
+//     System.out.println("Enter your array");
 //     for(int i=0; i<marks.length;i++){
 //         marks[i] = sc.nextInt();
 //     }
@@ -209,7 +210,7 @@ public class Arrays {
 
 
 
-//-----------To Linear search the paticular x.
+//-----------_________To Linear search the paticular x.
 
 
 // public static int Search(int marks[],int key) {
@@ -242,7 +243,7 @@ public class Arrays {
 
 
 
-//To find largest and smallest number in an array
+//______________________To find largest and smallest number in an array
 
 
 // public static int getlargest(int numbers[]){
@@ -323,7 +324,7 @@ public class Arrays {
 
 
 // public static void main (String args[]){
-//     int array[]={0,1,2,3,4,5,6,7};
+//     int array[]={0,1,2,3,4,5,6,8};
 //     int result[] = new int[array.length];
    
 //     // Reverse the array
@@ -346,6 +347,7 @@ public class Arrays {
 
 
 
+
 //------------------------->Pairs in array
 
 
@@ -355,7 +357,7 @@ public class Arrays {
 //     for(int i=0;i<array.length;i++){ 
 //         int curr = array[i];                 //Here curr is used to denote the current element
 //         for(int j=i+1;j<array.length;j++){
-//             System.out.print( "(" + array[i]/*curr */ + "," + array[j] + ")" );
+//             System.out.print( "(" + curr /*curr */ + "," + array[j] + ")" );
 //             tp++;       //increments tp after every pair.
 //         }
 //         System.out.println( );
@@ -421,16 +423,16 @@ public class Arrays {
 
 
 
-//________________________Print sum of subarrays--Brute force approach
+//________________________Print Max sum of subarrays--Brute force approach
 
 
 
-// public static void subarrays(int array[]){
+//public static void subarrays(int array[]){
 
-//     int maxsum=Integer.MIN_VALUE;                                  //Gives total subarray count
+//     int maxsum=Integer.MIN_VALUE;       //If you use maxsum = Integer.MIN_VALUE: You are allowing any value, even negative, to be stored.                           //Gives total subarray count
 //     int sum=0;
 //     for(int i=0;i<array.length;i++){
-//     for(int j=1;j<array.length;j++){
+//     for(int j=i;j<array.length;j++){
 //         for(int k=i;k<=j;k++){
 //             sum+=array[k];
 //         }
@@ -442,7 +444,9 @@ public class Arrays {
 //     }
 
 // public static void main(String[] args) {
-//     int array[]={2,4,6,8,10};
+//     //int array[]={2,4,6,8,10};
+//     //int array[]={-2,3,-2,-1};
+//     int array[]={3,-3};
 //     subarrays(array);
 // }
 // }
@@ -503,7 +507,7 @@ public class Arrays {
 //     for(int i=0;i<array.length;i++){
 //         currSum+=array[i];
 
-//         if(currSum<0){ //whenever currsum reaches negative it becomes 0
+//         if(currSum<0){ //Kadens algo says -:whenever currsum reaches negative it becomes 0
 //             currSum=0;
 //         }
 //         maxSum=Math.max(maxSum,currSum);
@@ -511,7 +515,7 @@ public class Arrays {
 //     System.out.println("Maximun Sum is :"+ maxSum);
 // }
 //     public static void main(String[] args) {
-//         int array[]={-2,3,-2,-1};
+//         int array[]={-3,3};
 //         Maxsubarrays(array);
 //     }
 // }
@@ -538,14 +542,14 @@ public class Arrays {
 //     int leftmax[] = new int[n]; 
 //     leftmax[0]=array[0];
 //     for(int i=1;i<n;i++){
-//         leftmax[i]=Math.max(array[i],leftmax[i-1]); //compare array height with left heightl
+//         leftmax[i]=Math.max(array[i],leftmax[i-1]); //compare current index with previous one
 //      }
 
 //     //Calculate Right max boundary - array
 //     int rightmax[]=new int[n];
 //     rightmax[n-1]=array[n-1]; //As we start from right end of array
 //     for(int i=n-2;i>=0;i--){  // i=n-2 as we have already for n-1 
-//         rightmax[i]=Math.max(array[i], rightmax[i+1]); // i+1 is used as we compare current index with next one
+//         rightmax[i]=Math.max(array[i], rightmax[i+1]); // i+1 is used as we compare current index with next one and next one in +1 element from left to right
 //     }
 
 
@@ -555,7 +559,7 @@ public class Arrays {
 //     for(int i =0;i<n;i++){
 //         int waterlevel = Math.min(leftmax[i], rightmax[i]);
 //         trappedWater += waterlevel - array[i];
-//     }  
+//     }   
 //     return trappedWater;
 // } 
 // public static void main(String[] args) {
