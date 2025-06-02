@@ -38,7 +38,7 @@
 //             int lastdigit = n % 10;
 //             reverse = (reverse*10) + lastdigit;
 //             n = n /10;
-            
+
 //         }
 //         System.out.print(reverse);
 //     }
@@ -70,12 +70,11 @@
 //              else{
 //                 System.out.println("number entered : " + n );
 //          }
-          
+
 //          }
-        
+
 //     }
 //   }
-
 
 // import java.util.Scanner;
 // public class hello {
@@ -89,11 +88,9 @@
 //             } 
 //             System.out.println(i);
 //         }
-        
+
 //     }
 // }
-
-
 
 // import java.util.*;
 //   public class hello{
@@ -108,21 +105,46 @@
 //              else{
 //                 System.out.println("number entered : " + n );
 //          }
-          
+
 //          }
-        
+
 //     }
 //   }
 
+//-------Prime Number range from 2 to n-------
+
+// import java.util.*;
+
+// public class hello {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter a number to check if it is prime: ");
+//         int n = sc.nextInt();
+
+//         for (int i = 2; i <= n; i++) {
+//             boolean isprime = true;
+
+//             for (int j = 2; j <= Math.sqrt(i); j++) {
+//                 if (i % j == 0) {
+//                     isprime = false;
+//                     break;
+//                 }
+//             }
+//             if (isprime) {
+//                 System.out.println(i + " is a prime number");
+//             }
+//         }
+//     }
+// }
 
 
-
-//-------Prime Number
+//________________Prime Number_________________
 
 import java.util.*;
 public class hello{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number to check if it is prime: ");
         int n = sc.nextInt();
         boolean isprime = true;
         for(int i = 2;i<n-1;i++){
