@@ -265,7 +265,6 @@ public class Arrays {
 //     int numbers[] = {1,2,3,4,6,9};    
 //     System.out.println("largest is "+getlargest(numbers));
 // }
-    
 // }
 
 
@@ -507,7 +506,7 @@ public class Arrays {
 //     for(int i=0;i<array.length;i++){
 //         currSum+=array[i];
 
-//         if(currSum<0){ //Kadens algo says -:whenever currsum reaches negative it becomes 0
+//         if(currSum<0){ //Kadens algo says -:whenever currSum reaches negative it becomes 0
 //             currSum=0;
 //         }
 //         maxSum=Math.max(maxSum,currSum);
@@ -535,39 +534,39 @@ public class Arrays {
 //----------------->Rainwater Trapping problem
 
 
-// public static int trapped(int array[]){
+public static int trapped(int array[]){
 
-//     int n = array.length; //for easy access
+    int n = array.length; //for easy access
 
-//     //Calculate Left max boundary - array
-//     int leftmax[] = new int[n]; 
-//     leftmax[0]=array[0];
-//     for(int i=1;i<n;i++){
-//         leftmax[i]=Math.max(array[i],leftmax[i-1]); //compare current index with previous one
-//      }
+    //Calculate Left max boundary - array
+    int leftmax[] = new int[n]; 
+    leftmax[0]=array[0];
+    for(int i=1;i<n;i++){
+        leftmax[i]=Math.max(array[i],leftmax[i-1]);  //compare current index with previous one
+     }
 
-//     //Calculate Right max boundary - array
-//     int rightmax[]=new int[n];
-//     rightmax[n-1]=array[n-1]; //As we start from right end of array
-//     for(int i=n-2;i>=0;i--){  // i=n-2 as we have already for n-1 
-//         rightmax[i]=Math.max(array[i], rightmax[i+1]); // i+1 is used as we compare current index with next one and next one is +1 element from left to right
-//     }
+    //Calculate Right max boundary - array
+    int rightmax[]=new int[n];
+    rightmax[n-1]=array[n-1];   //As we start from right end of array
+    for(int i=n-2;i>=0;i--){    // i=n-2 as we have already for n-1 
+        rightmax[i]=Math.max(array[i], rightmax[i+1]);   // i+1 is used as we compare current index with next one and next one is +1 element from left to right
+    }
 
 
 
-//     //loop
-//     int trappedWater = 0 ;
-//     for(int i =0;i<n;i++){ 
-//         int waterlevel = Math.min(leftmax[i], rightmax[i]);
-//         trappedWater += waterlevel - array[i];
-//     }   
-//     return trappedWater;
-// } 
-// public static void main(String[] args) {
-//     int array[]={4,2,0,6,3,2,5};
-//     System.out.println(trapped(array));
-// }
-// }
+    //loop
+    int trappedWater = 0 ;
+    for(int i =0;i<n;i++){ 
+        int waterlevel = Math.min(leftmax[i], rightmax[i]);
+        trappedWater += (waterlevel - array[i]) * 1;    //1 is width of each bar                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+    }   
+    return trappedWater;
+} 
+public static void main(String[] args) {
+    int array[]={4,2,0,6,3,2,5};
+    System.out.println(trapped(array));
+}
+}
 
 
 
@@ -583,27 +582,27 @@ public class Arrays {
 //----------------->Buy and sell stocks
 
 
-public static int BuyAndSellStocks(int prices[]){
-    int buyPrice = Integer.MAX_VALUE;   //+infity
-    int maxProfit = 0;
+// public static int BuyAndSellStocks(int prices[]){
+//     int buyPrice = Integer.MAX_VALUE;   //+infity
+//     int maxProfit = 0;
 
 
-    for(int i =0;i<prices.length;i++){
-        if(buyPrice < prices[i]){ //profit
-            int profit = prices[i]-buyPrice; //Today's Profit
+//     for(int i =0;i<prices.length;i++){
+//         if(buyPrice < prices[i]){ //profit
+//             int profit = prices[i]-buyPrice; //Today's Profit
 
-            maxProfit = Math.max(maxProfit,profit); //overall max profit
-        }
+//             maxProfit = Math.max(maxProfit,profit); //overall max profit
+//         }
 
-        else{                       //if  buy price is more we assign current price means prices to it .
-            buyPrice=prices[i];   
-        }
-    }
-    return maxProfit;
+//         else{                       //if  buy price is more we assign current price means prices to it .
+//             buyPrice=prices[i];   
+//         }
+//     }
+//     return maxProfit;
 
-}
-public static void main(String[] args) {
-    int prices[]={7,1,5,3,6,4};
-    System.out.println(BuyAndSellStocks(prices));
-}
-}
+// }
+// public static void main(String[] args) {
+//     int prices[]={7,1,5,3,6,4};
+//     System.out.println(BuyAndSellStocks(prices));
+// }
+// }
