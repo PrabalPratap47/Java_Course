@@ -59,7 +59,7 @@ public class Sorting{
 
 //         for(int j=i+1; j<n; j++){
 //             if(arr[j]<arr[minpos]){
-//                 minpos = j;
+//                 minpos = j;   //stores the position (index) of the smallest element found so far
 //             }
 //         }
 
@@ -98,17 +98,17 @@ public class Sorting{
 //     int n = arr.length ;
 //     for(int i =0; i<n; i++){
 
-//         int curr = arr[i];
-//         int prev = i-1;
+//         int key = arr[i];
+//         int j = i-1;
 
 //         //finding out the corrct position to insert , pushing back
-//         while(prev>=0 && arr[prev] > arr[curr]){
-//             arr[prev+1]=arr[prev];    //shifting of small element
-//             prev--;                          
+//         while(j>=0 && arr[j] > arr[key]){
+//             arr[j+1]=arr[j];    //shifting larger element to the right
+//             j--;                          
 //         }
 
 //         //insertion
-//         arr[prev+1] = arr[curr];
+//         arr[j+1] = arr[key];
 //     }
 
 //     //print output
@@ -141,20 +141,21 @@ public class Sorting{
 //     //find largest
 //     int largest=Integer.MIN_VALUE;
 //     for(int i =0; i<n; i++){
-//         largest=Math.max(largest, arr[i]);
+//         largest=Math.max(largest, arr[i]);    // OR  if(arr[i] > largest)   largest = arr[i]; 
+
 //     }
 
 //     //Frequency Counting
 //     int count[]=new int[largest+1];
 //     for(int i=0;i<n;i++){
-//         count[arr[i]]++;
+//         count[arr[i]]++; //Go to the index equal to the value of arr[i] in the count array and increment it by 1 Ex-: i = 0 → arr[i] = 4👉 count[arr[i]] means count[4] → count[4]++ → increases by 1 → count becomes [0, 0, 0, 0, 1]
 //     }
 
 //     //Sorting
 //     int j =0;
 //     for(int i=0;i<count.length;i++){
-//         while (count[i]>0) {
-//             arr[j]=i;
+//         while (count[i]>0) {   //count[i] is frequency of element i 
+//             arr[j]=i;          //and i is not only an index here but also the element of original array  
 //             j++;
 //             count[i]--;
 //         }
