@@ -66,18 +66,18 @@ public class Two_d_array{
 //             System.out.print(matrix[startrow][j]+" ");
 //         }
 //         //Right
-//         for(int i=startrow+1;i<=endrow;i++){
+//         for(int i=startrow+1;i<=endrow;i++){  //we used startrow+1 to avoid duplicate printing of corner element
 //             System.out.print(matrix[i][endcol]+" ");
 //         }
 //         //bottom
-//         for(int j=endcol-1;j>=startcol;j--){
+//         for(int j=endcol-1; j>=startcol;j--){  //we used endcol-1 to avoid duplicate printing of corner element
 //             if(startrow==endrow){
 //                 break;
 //             }
 //             System.out.print(matrix[endrow][j]+" ");
 //         }
 //         //left
-//         for(int i=endrow-1;i>=startrow+1;i--){
+//         for(int i=endrow-1;i>=startrow+1;i--){ //we used endrow-1 and startrow+1 to avoid duplicate printing of corner element
 //             if(startcol==endcol){
 //                 break;
 //             }
@@ -94,9 +94,8 @@ public class Two_d_array{
 //      //System.out.println();
 // }
 
-// public static void main(String[] args) {
-//     int matrix[][]={{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}
-//     };
+// public static void main(String[] args) {  
+//     int matrix[][]={{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
 //     spiral(matrix);
 // }
 

@@ -96,7 +96,7 @@ public class Sorting{
 
 // public static void insertion(int arr[]){
 //     int n = arr.length ;
-//     for(int i =0; i<n; i++){
+//     for(int i =1; i<n; i++){
 
 //         int key = arr[i];
 //         int j = i-1;
@@ -138,7 +138,7 @@ public class Sorting{
 // public static void Counting(int arr[]){
 //     int n = arr.length;
 
-//     //find largest
+//     //find largest element in array
 //     int largest=Integer.MIN_VALUE;
 //     for(int i =0; i<n; i++){
 //         largest=Math.max(largest, arr[i]);    // OR  if(arr[i] > largest)   largest = arr[i]; 
@@ -148,7 +148,7 @@ public class Sorting{
 //     //Frequency Counting
 //     int count[]=new int[largest+1];
 //     for(int i=0;i<n;i++){
-//         count[arr[i]]++; //Go to the index equal to the value of arr[i] in the count array and increment it by 1 Ex-: i = 0 → arr[i] = 4👉 count[arr[i]] means count[4] → count[4]++ → increases by 1 → count becomes [0, 0, 0, 0, 1]
+//         count[arr[i]]++; //Go to the index equal to the value of arr[i] in the count array and increment it by 1 Ex-: i = 0 → arr[i] = 4👉 count[arr[i]] means count[4] → count[4]++ → increases by 1 → count array becomes [0, 0, 0, 0, 1]
 //     }
 
 //     //Sorting

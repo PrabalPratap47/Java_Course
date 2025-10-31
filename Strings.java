@@ -7,7 +7,7 @@ public class Strings {
 //         Scanner sc = new Scanner(System.in);
 //         System.out.println("Give your input-:");
 //         String str = sc.nextLine();
-//         System.out.println( "You input is -: "+str);
+//         System.out.println( "You input is -: "+str);i
 
 //     }
 // }    
@@ -130,7 +130,7 @@ public class Strings {
 //             y--;
 //         }    
 //     }
-//         int X2 = x*x;                         //as (x-0)^2 is equal to x^2 
+//         int X2 = x*x;                         //as (x-0)^2 is equal to x^2 // in most direction or displacement questions, you assume the object starts from the origin (0,0)
 //         int Y2 = y*y;
 //         return (float)Math.sqrt(X2+Y2);   //Type casting to float
 // }
@@ -154,7 +154,7 @@ public class Strings {
 //---------------------------->SubString<---------------------------------------
 
 
-// // public static String substring(String str, int si, int ei){
+// // public static String substri(String str, int si, int ei){
 // //     String strng = "";
 // //     for(int i = si;i<ei;i++){
 // //         strng +=  str.charAt(i);
@@ -165,9 +165,9 @@ public class Strings {
 // public static void main(String []args){
 //     String str = "Hello";
 
-//     System.out.println(str.substring (0,5));
+//     System.out.println(str.substring (0,5));  //default function of substring
 
-//     //System.out.println(substring(str, 0, 5));
+//     //System.out.println(substri(str, 0, 5)); //this is function call
 // }
 // }
 
